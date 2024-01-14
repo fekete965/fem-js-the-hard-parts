@@ -18,3 +18,7 @@
 - ### The Hard Parts of Functional JavaScript
   - [The Hard Parts of Functional JavaScript](src/The%20Hard%20Parts%20of%20Functional%20JavaScript/higher-order-functions.ts)
 
+---
+
+- ### The Hard Parts of Asynchronous JavaScript
+  - [Promises](src/The%20Hard%20Parts%20of%20Asynchronous%20JavaScript/promises.ts)
