@@ -13,3 +13,8 @@
 - ### The Hard Parts of Object Oriented JavaScript:
   - [Object-Oriented JavaScript](src/The%20Hard%20Parts%20of%20Object%20Oriented%20JavaScript/object-oriented-javaScript.ts)
 
+---
+
+- ### The Hard Parts of Functional JavaScript
+  - [The Hard Parts of Functional JavaScript](src/The%20Hard%20Parts%20of%20Functional%20JavaScript/higher-order-functions.ts)
+
