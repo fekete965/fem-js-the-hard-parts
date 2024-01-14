@@ -7,12 +7,6 @@ type Person = {
   age: number;
 };
 
-type PersonWithGreet = {
-  name: string;
-  age: number;
-  greet(): void;
-};
-
 type PersonFunctionStore = {
   greet(): void;
   introduce?: () => void;
@@ -288,3 +282,5 @@ robotFido = Object.assign(
 
 // /********* Uncomment to test your work! *********/
 robotFido.speak(); // -> Logs "I am made of metal"
+
+export {};

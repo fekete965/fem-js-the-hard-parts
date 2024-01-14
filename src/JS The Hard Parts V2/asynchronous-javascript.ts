@@ -188,3 +188,5 @@ setTimeout(function () {
 setTimeout(function () {
   console.log(giveHiSometimes());
 }, 8000); // -> 'hi'
+
+export {};

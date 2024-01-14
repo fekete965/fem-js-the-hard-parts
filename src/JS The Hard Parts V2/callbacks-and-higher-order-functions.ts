@@ -1,6 +1,3 @@
-// Type JavaScript here and click "Run Code" or press Ctrl + s
-console.log("Hello, world!");
-
 // Challenge 1
 console.log("Challenge 1");
 function addTwo(num: number) {
@@ -40,9 +37,9 @@ console.log(map([1, 2, 3], addTwo));
 // Challenge 4
 console.log("------------");
 console.log("Challenge 4");
-function forEach<A>(array: A[], callback: (value: A) => any) {
+function forEach<A>(array: A[], callback: (value: A) => void) {
   for (let i = 0; i < array.length; i++) {
-    array[i] = callback(array[i]);
+    callback(array[i]);
   }
 }
 
@@ -69,18 +66,21 @@ function mapWith<A, B>(array: A[], callback: (value: A) => B) {
 
 const mapWithArray = [5, 10, 15];
 console.log(mapWith(mapWithArray, addTwo));
-
 // Challenge 6
 console.log("------------");
 console.log("Challenge 6");
-function reduce<A>(array: A[], callback: (a: A, b: A) => A, initialValue?: A) {
+function reduce(
+  array: any[],
+  callback: (acc: any, curr: any) => any,
+  initialValue?: any
+): any {
   let i = 0;
 
   if (initialValue == null) {
     initialValue = array[i++];
   }
 
-  let value = initialValue;
+  let value: any = initialValue;
 
   for (; i < array.length; i++) {
     value = callback(value, array[i]);
@@ -156,12 +156,12 @@ console.log(
 // Challenge 9
 console.log("------------");
 console.log("Challenge 9");
-function objOfMatches<A extends string>(
-  array1: A[],
-  array2: A[],
-  callback: (value: A) => A
+function objOfMatches(
+  array1: string[],
+  array2: string[],
+  callback: (value: string) => string
 ) {
-  const dict: Record<string, A> = {};
+  const dict: Record<string, string> = {};
 
   for (let i = 0; i < array1.length; i++) {
     const value1 = array1[i];
