@@ -1,0 +1,32 @@
+{
+  "name": "node-frontend-masters",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "lint": "tsc",
+    "clean": "rm -rf ./dist",
+    "build:server": "pnpm run clean && esbuild src/server.ts --bundle --platform=node --outfile=dist/server.js --format=esm",
+    "start:server": "pnpm run build:server && node dist/server.js",
+    "dev:server:esbuild": "pnpm run build:server --watch",
+    "dev:server:node": "node --watch dist/server.js",
+    "dev:server:tsc": "tsc --watch --preserveWatchOutput",
+    "dev:server": "run-p dev:server:*",
+    "build:streams": "pnpm run clean && esbuild src/streams/streams.ts --bundle --platform=node --outfile=dist/streams.js --format=esm",
+    "start:streams": "pnpm run build:streams && node dist/streams.js",
+    "dev:streams:esbuild": "pnpm run build:streams --watch",
+    "dev:streams:node": "node --watch dist/streams.js",
+    "dev:streams:tsc": "tsc --watch --preserveWatchOutput",
+    "dev:streams": "run-p dev:streams:*"
+  },
+  "author": "",
+  "devDependencies": {
+    "@types/node": "^20.11.9",
+    "@types/through2": "^2.0.41",
+    "esbuild": "^0.20.0",
+    "npm-run-all": "^4.1.5",
+    "through2": "^4.0.2",
+    "typescript": "^5.3.3"
+  }
+}
