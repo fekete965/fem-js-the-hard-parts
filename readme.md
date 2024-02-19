@@ -30,3 +30,12 @@
   - [Server](src/The%20Hard%20Parts%20of%20Servers%20&%20Node.js/src/server.ts)
   - [Streams](src/The%20Hard%20Parts%20of%20Servers%20&%20Node.js/src/streams/streams.ts)
 
+---
+
+- ### The Hard Parts of UI Development
+  Official resource: https://github.com/UIHP-Challenges/UIHP-Challenges-April23
+  - [Part 1: Building an Interactive UI](src/The%20Hard%20Parts%20of%20UI%20Development/part1/part1.js)
+  - [Part 2: One-way Data Binding](src/The%20Hard%20Parts%20of%20UI%20Development/part2/part2.js)
+  - [Part 3: The Virtual DOM](src/The%20Hard%20Parts%20of%20UI%20Development/part3/part3.js)
+  - [Part 4: Flexible DOM Composition](src/The%20Hard%20Parts%20of%20UI%20Development/part4/part4.js)
+  - [Part 5: Hooks & Diffing](src/The%20Hard%20Parts%20of%20UI%20Development/part5/part5.js)
